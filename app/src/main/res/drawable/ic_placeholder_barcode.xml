@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="80dp"
+    android:viewportWidth="200"
+    android:viewportHeight="80">
+
+    <!-- Черный фон с закруглениями -->
+    <path
+        android:fillColor="#000000"
+        android:pathData="M8,0h184a8,8 0,0 1,8 8v64a8,8 0,0 1,-8 8H8a8,8 0,0 1,-8 -8V8a8,8 0,0 1,8 -8z"/>
+
+    <!-- Серые полосы-штрихи -->
+    <path android:fillColor="#C7C7C7" android:pathData="M30,12h8v56h-8z"/>
+    <path android:fillColor="#C7C7C7" android:pathData="M44,12h4v56h-4z"/>
+    <path android:fillColor="#C7C7C7" android:pathData="M54,12h14v56h-14z"/>
+    <path android:fillColor="#C7C7C7" android:pathData="M72,12h6v56h-6z"/>
+    <path android:fillColor="#C7C7C7" android:pathData="M84,12h6v56h-6z"/>
+    <path android:fillColor="#C7C7C7" android:pathData="M100,12h10v56h-10z"/>
+    <path android:fillColor="#C7C7C7" android:pathData="M120,12h26v56h-26z"/>
+    <path android:fillColor="#C7C7C7" android:pathData="M152,12h10v56h-10z"/>
+</vector>

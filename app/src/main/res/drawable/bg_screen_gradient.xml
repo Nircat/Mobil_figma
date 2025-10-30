@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- фон плавно темнеет сверху вниз -->
+    <gradient
+        android:startColor="#8C6E6468"
+        android:endColor="#FF1E1B1C"
+        android:type="linear"
+        android:angle="90" />
+</shape>
