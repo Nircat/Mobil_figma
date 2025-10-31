@@ -2,5 +2,5 @@
 <resources>
     <dimen name="space_8">8dp</dimen>
     <dimen name="space_12">12dp</dimen>
-
+    <dimen name="statusbar_padding">24dp</dimen>
 </resources>

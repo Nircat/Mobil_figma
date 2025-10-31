@@ -14,6 +14,11 @@ import java.util.Random;
 import android.view.View;
 import android.content.SharedPreferences;
 
+import androidx.core.view.ViewCompat;
+import androidx.core.view.WindowInsetsCompat;
+import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.core.graphics.Insets;
+
 
 
 public class BarcodeActivity extends AppCompatActivity {
@@ -28,6 +33,14 @@ public class BarcodeActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.bar_code);
+
+        View root = findViewById(R.id.root);
+        ViewCompat.setOnApplyWindowInsetsListener(root, (v, insets) -> {
+            Insets bars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
+            // Даём отступ всему экрану: сверху под статус-бар, снизу под жестовую панель
+            v.setPadding(0, bars.top, 0, bars.bottom);
+            return WindowInsetsCompat.CONSUMED;
+        });
 
 
         tvFullName = findViewById(R.id.tvFullName);
@@ -65,6 +78,13 @@ public class BarcodeActivity extends AppCompatActivity {
                 }
             });
         }
+
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.topBar), (v, insets) -> {
+            int top = insets.getInsets(WindowInsetsCompat.Type.statusBars()).top;
+            v.setPadding(0, top, 0, 0);
+            return insets;
+        });
+
 
     }
 

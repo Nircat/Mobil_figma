@@ -24,6 +24,11 @@
 
         <activity android:name=".BarcodeActivity" />
         <activity android:name=".ProfileActivity" />
+        <activity
+            android:name=".ScheduleActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Material3.DayNight.NoActionBar" />
+
 
     </application>
 

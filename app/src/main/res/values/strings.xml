@@ -4,4 +4,6 @@
     <string name="profile">Личный кабинет</string>
     <string name="schedule">Расписание</string>
     <string name="close">Закрыть</string>
+    <string name="schedule_tabs">Вкладки расписания</string>
+    <string name="send">Отправить</string>
 </resources>

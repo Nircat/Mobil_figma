@@ -14,9 +14,9 @@
         <!-- Верхняя панель с крестиком -->
         <ImageView
             android:id="@+id/ivClose"
-            android:layout_marginTop="10dp"
-            android:layout_width="45dp"
-            android:layout_height="45dp"
+            android:layout_marginTop="24dp"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
             android:src="@drawable/ic_close_24"
             android:contentDescription="@string/close"
             app:tint="@android:color/white"

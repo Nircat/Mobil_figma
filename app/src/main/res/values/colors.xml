@@ -4,4 +4,7 @@
     <color name="white">#FFFFFFFF</color>
     <color name="ChBej">#3A2626</color>
     <color name="Bej">#C3A4A4</color>
+    <color name="BejText">#3B2F2A</color>    <!-- тёмный текст на бежевом -->
+    <color name="BejTextDim">#6B5B54</color> <!-- менее яркий текст -->
+    <color name="BgDark">#1A1414</color>
 </resources>

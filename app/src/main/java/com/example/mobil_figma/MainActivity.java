@@ -47,6 +47,16 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        TextView tv = findViewById(R.id.btnSchedule);
+        tv.setOnClickListener(v ->
+                startActivity(new Intent(MainActivity.this, ScheduleActivity.class)));
+
+
+        TextView btnFeedback = findViewById(R.id.btnFeedback); // это КНОПКА НА ГЛАВНОМ ЭКРАНЕ
+        btnFeedback.setOnClickListener(v -> {
+            new FeedbackSheet().show(getSupportFragmentManager(), "feedback");
+        });
+
 
     }
 }
